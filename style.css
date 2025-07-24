@@ -6,6 +6,8 @@
 
 body {
   background-color: #1e1e1e;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(14px, 2vw, 18px);
 }
 
 .container {
@@ -123,4 +125,96 @@ input::placeholder {
 }
 .weather_card i {
   margin-right: 10px;
+    font-size: clamp(16px, 2vw, 24px);
+}
+
+/* === RESPONSIVE DESIGN FOR SMALL SCREENS === */
+@media (max-width: 1024px) {
+  .container {
+    width: 80%;
+    padding: 1.5rem;
+  }
+
+  .weather_body {
+    margin: 2rem 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  .weather_body {
+    margin: 2rem 0.5rem;
+    font-size: 1rem;
+  }
+
+  .weather_temperature {
+    font-size: 1.8rem;
+  }
+
+  .weather_minmax p {
+    font-size: 0.9rem;
+  }
+
+  .weather_icon img {
+    width: 5rem;
+  }
+
+  .weather_card {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 8px;
+  }
+
+  .weather_card i {
+    font-size: 18px;
+  }
+
+  .weather_card p {
+    font-size: 0.9rem;
+  }
+
+  .weather_search input {
+    width: 100%;
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+  }
+
+  .weather_search i {
+    font-size: 14px;
+    top: 10px;
+    left: 10px;
+  }
+
+  .weather_info {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .weather_search input {
+    font-size: 0.9rem;
+    padding: 0.4rem 1.8rem;
+  }
+
+  .weather_card {
+    flex-direction: row;
+    font-size: 0.85rem;
+  }
+
+  .weather_icon img {
+    width: 4rem;
+  }
+
+  .weather_temperature {
+    font-size: 1.5rem;
+  }
 }

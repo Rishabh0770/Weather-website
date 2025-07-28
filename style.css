@@ -62,10 +62,14 @@ input::placeholder {
 
 .weather_icon {
   margin-top: 2.5rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .weather_icon > img {
   width: 6rem;
+  align-items: center;
+  justify-content: center;
 }
 /* 
 .weather_date_time {
@@ -74,6 +78,8 @@ input::placeholder {
 
 .weather_data {
   position: relative;
+  justify-content: center;
+  align-items: center;
 }
 .weather_data > p {
   border: 2px solid #1e1e1e;

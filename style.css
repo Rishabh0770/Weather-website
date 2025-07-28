@@ -135,38 +135,38 @@ input::placeholder {
 }
 
 /* === RESPONSIVE DESIGN FOR SMALL SCREENS === */
-@media (max-width: 1024px) {
-  .container {
-    width: 80%;
-    padding: 1.5rem;
-  }
-
-  .weather_body {
-    margin: 2rem 1rem;
-  }
-}
 
 @media (max-width: 768px) {
   .container {
     width: 90%;
     padding: 1.5rem;
+    align-items: center;
+    justify-content: center;
   }
 
   .weather_body {
     margin: 2rem 0.5rem;
     font-size: 1rem;
+    align-items: center;
+    justify-content: center;
   }
 
   .weather_temperature {
     font-size: 1.8rem;
+    align-items: center;
+    justify-content: center;
   }
 
   .weather_minmax p {
     font-size: 0.9rem;
+    align-items: center;
+    justify-content: center;
   }
 
   .weather_icon img {
     width: 5rem;
+    align-items: center;
+    justify-content: center;
   }
 
   .weather_card {
@@ -200,27 +200,4 @@ input::placeholder {
   }
 }
 
-@media (max-width: 480px) {
-  .container {
-    width: 95%;
-    padding: 1rem;
-  }
 
-  .weather_search input {
-    font-size: 0.9rem;
-    padding: 0.4rem 1.8rem;
-  }
-
-  .weather_card {
-    flex-direction: row;
-    font-size: 0.85rem;
-  }
-
-  .weather_icon img {
-    width: 4rem;
-  }
-
-  .weather_temperature {
-    font-size: 1.5rem;
-  }
-}

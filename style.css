@@ -17,6 +17,8 @@ body {
   margin: 0 auto;
   margin-top: 2rem;
   border-radius: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
 .weather_header {
@@ -32,6 +34,8 @@ input {
   outline: none;
   padding: 0.5rem 2.5rem;
   border-radius: 5px;
+  align-items: center;
+  justify-content: center;
 }
 
 input::placeholder {
@@ -40,6 +44,8 @@ input::placeholder {
 
 .weather_search {
   position: relative;
+  justify-content: center;
+  align-items: center;
 }
 
 .weather_search i {
@@ -71,10 +77,12 @@ input::placeholder {
   align-items: center;
   justify-content: center;
 }
-/* 
+
 .weather_date_time {
   position: relative;
-} */
+  align-items: center;
+  justify-content: center;
+} 
 
 .weather_data {
   position: relative;
@@ -89,11 +97,15 @@ input::placeholder {
   position: absolute;
   left: 0.6rem;
   padding: 0.6rem;
+  align-items: center;
+  justify-content: center;
   /* margin-bottom: 2rem; */
 }
 
 .weather_temperature {
   font-size: 2rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .weather_minmax {
@@ -104,6 +116,8 @@ input::placeholder {
 
 .weather_minmax p {
   padding: 0 0.8rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .weather_info {
@@ -128,6 +142,13 @@ input::placeholder {
   padding: 10px;
   border-radius: 0.8rem;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.weather_card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  background: #f9f9f9;
 }
 .weather_card i {
   margin-right: 10px;

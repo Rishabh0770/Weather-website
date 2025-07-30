@@ -116,7 +116,7 @@ input:focus {
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  color: #e91e63;
+  color: #000000;
 }
 
 .weather_minmax {

@@ -11,7 +11,9 @@ body {
 }
 
 .container {
-  background-color: #fff;
+background: linear-gradient(to bottom right, #e0f7fa, #ffffff);
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   padding: 2rem;
   width: 40%;
   margin: 0 auto;
@@ -42,6 +44,11 @@ input::placeholder {
   color: #f7f7f7;
 }
 
+input:focus {
+  border: 2px solid #00bfff;
+  outline: none;
+}
+
 .weather_search {
   position: relative;
   justify-content: center;
@@ -70,18 +77,20 @@ input::placeholder {
   margin-top: 2.5rem;
   align-items: center;
   justify-content: center;
+  color: #333;
 }
 
 .weather_icon > img {
   width: 6rem;
-  align-items: center;
-  justify-content: center;
 }
 
 .weather_date_time {
   position: relative;
   align-items: center;
   justify-content: center;
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
 } 
 
 .weather_data {
@@ -106,6 +115,8 @@ input::placeholder {
   font-size: 2rem;
   align-items: center;
   justify-content: center;
+  font-weight: bold;
+  color: #e91e63;
 }
 
 .weather_minmax {
@@ -153,6 +164,12 @@ input::placeholder {
 .weather_card i {
   margin-right: 10px;
     font-size: clamp(16px, 2vw, 24px);
+}
+
+.center-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* === RESPONSIVE DESIGN FOR SMALL SCREENS === */
